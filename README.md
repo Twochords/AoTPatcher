@@ -1,6 +1,6 @@
 # EQEmuPatcher
 
-EQEmu File Comparison and Patcher
+EQEmu File Comparison and Patcherx
 
 ![alt tag](http://i.imgur.com/FSVgkzh.png)
 ---
