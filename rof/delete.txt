@@ -1,0 +1,4 @@
+nektulos.eqg
+lavastorm.eqg
+nektulosa.eqg
+nektulos_obj1.eqg
