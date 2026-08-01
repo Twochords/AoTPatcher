@@ -47,6 +47,7 @@
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Composite>
 		<Include>SIDL.xml</Include>
+		<Include>EQUI_SpellChoiceWnd.xml</Include>
 		<Include>EQUI_Animations.xml</Include>
 		<Include>EQUI_Templates.xml</Include>
 		<Include>EQUI_CharacterCreate.xml</Include>
@@ -210,10 +211,12 @@
 		<Include>EQUI_AoTLostWnd.xml</Include>
 		<Include>EQUI_AdvLootWnd.xml</Include>
 		<Include>EQUI_ShopWnd.xml</Include>
-		<Include>EQUI_NativeAchievementWnd.xml</Include>
 		<Include>EQUI_AoTMenuWnd.xml</Include>
 		<Include>EQUI_AoTAllacloneWnd.xml</Include>
 		<Include>EQUI_AoTDungeonWnd.xml</Include>
+		<Include>EQUI_AAWindow.xml</Include>
+		<Include>EQUI_AoTSpellChoiceWnd.xml</Include>
+		<Include>EQUI_NativeAchievementWnd.xml</Include>
 	</Composite>
 
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>

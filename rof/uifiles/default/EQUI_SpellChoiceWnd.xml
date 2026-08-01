@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+<!--
+  SpellChoiceWnd  -  custom level-up reward window for the Bard-only random server.
+
+  INSTALL:
+    1) Copy this file into your RoF2 client:  uifiles/default/EQUI_SpellChoiceWnd.xml
+    2) Edit uifiles/default/EQUI.xml and add this line inside the <Composite> list:
+           <Include>EQUI_SpellChoiceWnd.xml</Include>
+    3) eq-core-dll (dinput8.dll) creates/drives this window by its ScreenID "SpellChoiceWnd"
+       and the child control names below (SpellChoice_Name0.., _Desc0.., _Btn0..).
+
+  This is your reskin surface: tweak Location/Size/DrawTemplate/Font/colors freely.
+  Control NAMES must stay in sync with core_spellchoice.h.
+-->
+
+  <!-- ============================ Labels ============================ -->
+  <Label item="SpellChoice_Header">
+    <ScreenID>SpellChoice_Header</ScreenID>
+    <Font>4</Font>
+    <Location><X>15</X><Y>30</Y></Location>
+    <Size><CX>490</CX><CY>22</CY></Size>
+    <Text>You have gained a level - choose a new spell:</Text>
+    <TextColor><R>240</R><G>240</G><B>0</B></TextColor>
+    <NoWrap>true</NoWrap>
+  </Label>
+
+  <!-- Row template repeated 3x (index 0..2). Y stepped by 60px. -->
+  <Label item="SpellChoice_Name0">
+    <ScreenID>SpellChoice_Name0</ScreenID>
+    <Font>3</Font><Location><X>20</X><Y>62</Y></Location><Size><CX>360</CX><CY>20</CY></Size>
+    <Text></Text><TextColor><R>120</R><G>200</G><B>255</B></TextColor><NoWrap>true</NoWrap>
+  </Label>
+  <Label item="SpellChoice_Desc0">
+    <ScreenID>SpellChoice_Desc0</ScreenID>
+    <Font>2</Font><Location><X>20</X><Y>82</Y></Location><Size><CX>360</CX><CY>34</CY></Size>
+    <Text></Text><TextColor><R>200</R><G>200</G><B>200</B></TextColor>
+  </Label>
+
+  <Label item="SpellChoice_Name1">
+    <ScreenID>SpellChoice_Name1</ScreenID>
+    <Font>3</Font><Location><X>20</X><Y>122</Y></Location><Size><CX>360</CX><CY>20</CY></Size>
+    <Text></Text><TextColor><R>120</R><G>200</G><B>255</B></TextColor><NoWrap>true</NoWrap>
+  </Label>
+  <Label item="SpellChoice_Desc1">
+    <ScreenID>SpellChoice_Desc1</ScreenID>
+    <Font>2</Font><Location><X>20</X><Y>142</Y></Location><Size><CX>360</CX><CY>34</CY></Size>
+    <Text></Text><TextColor><R>200</R><G>200</G><B>200</B></TextColor>
+  </Label>
+
+  <Label item="SpellChoice_Name2">
+    <ScreenID>SpellChoice_Name2</ScreenID>
+    <Font>3</Font><Location><X>20</X><Y>182</Y></Location><Size><CX>360</CX><CY>20</CY></Size>
+    <Text></Text><TextColor><R>120</R><G>200</G><B>255</B></TextColor><NoWrap>true</NoWrap>
+  </Label>
+  <Label item="SpellChoice_Desc2">
+    <ScreenID>SpellChoice_Desc2</ScreenID>
+    <Font>2</Font><Location><X>20</X><Y>202</Y></Location><Size><CX>360</CX><CY>34</CY></Size>
+    <Text></Text><TextColor><R>200</R><G>200</G><B>200</B></TextColor>
+  </Label>
+
+  <!-- ============================ Buttons =========================== -->
+  <Button item="SpellChoice_Btn0">
+    <ScreenID>SpellChoice_Btn0</ScreenID>
+    <Location><X>400</X><Y>66</Y></Location><Size><CX>90</CX><CY>28</CY></Size>
+    <Text>Select</Text><ButtonDrawTemplate>BDT_Standard</ButtonDrawTemplate>
+  </Button>
+  <Button item="SpellChoice_Btn1">
+    <ScreenID>SpellChoice_Btn1</ScreenID>
+    <Location><X>400</X><Y>126</Y></Location><Size><CX>90</CX><CY>28</CY></Size>
+    <Text>Select</Text><ButtonDrawTemplate>BDT_Standard</ButtonDrawTemplate>
+  </Button>
+  <Button item="SpellChoice_Btn2">
+    <ScreenID>SpellChoice_Btn2</ScreenID>
+    <Location><X>400</X><Y>186</Y></Location><Size><CX>90</CX><CY>28</CY></Size>
+    <Text>Select</Text><ButtonDrawTemplate>BDT_Standard</ButtonDrawTemplate>
+  </Button>
+
+  <!-- ============================ Window ============================ -->
+  <Screen item="SpellChoiceWnd">
+    <ScreenID>SpellChoiceWnd</ScreenID>
+    <RelativePosition>false</RelativePosition>
+    <Location><X>260</X><Y>180</Y></Location>
+    <Size><CX>520</CX><CY>250</CY></Size>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>false</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <DrawTemplate>WDT_Def</DrawTemplate>
+    <Text>Choose a Spell</Text>
+    <Pieces>SpellChoice_Header</Pieces>
+    <Pieces>SpellChoice_Name0</Pieces>
+    <Pieces>SpellChoice_Desc0</Pieces>
+    <Pieces>SpellChoice_Btn0</Pieces>
+    <Pieces>SpellChoice_Name1</Pieces>
+    <Pieces>SpellChoice_Desc1</Pieces>
+    <Pieces>SpellChoice_Btn1</Pieces>
+    <Pieces>SpellChoice_Name2</Pieces>
+    <Pieces>SpellChoice_Desc2</Pieces>
+    <Pieces>SpellChoice_Btn2</Pieces>
+  </Screen>
+</XML>
