@@ -47,7 +47,6 @@
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Composite>
 		<Include>SIDL.xml</Include>
-		<Include>EQUI_SpellChoiceWnd.xml</Include>
 		<Include>EQUI_Animations.xml</Include>
 		<Include>EQUI_Templates.xml</Include>
 		<Include>EQUI_CharacterCreate.xml</Include>
