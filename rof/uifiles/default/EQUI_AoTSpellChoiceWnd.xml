@@ -8159,6 +8159,27 @@
 		<TooltipReference>Pay the shown price for three different rewards</TooltipReference>
 	</Button>
 
+	<STMLbox item="ASC_DeclineInfo">
+		<ScreenID>ASC_DeclineInfo</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Location><X>48</X><Y>384</Y></Location>
+		<Size><CX>150</CX><CY>26</CY></Size>
+		<Style_Border>true</Style_Border>
+		<TextColor><R>170</R><G>220</G><B>255</B></TextColor>
+	</STMLbox>
+
+	<Button item="ASC_Decline">
+		<ScreenID>ASC_Decline</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location><X>208</X><Y>384</Y></Location>
+		<Size><CX>170</CX><CY>26</CY></Size>
+		<Text>Decline</Text>
+		<TextColor><R>170</R><G>220</G><B>255</B></TextColor>
+		<Template>BDT_Normal</Template>
+		<TooltipReference>Take no reward, and reduce the price of your rerolls instead</TooltipReference>
+	</Button>
+
 	<Listbox item="ASC_KnownList">
 		<ScreenID>ASC_KnownList</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
@@ -8769,6 +8790,8 @@
 		<Pieces>ASC_Detail</Pieces>
 		<Pieces>ASC_RerollCost</Pieces>
 		<Pieces>ASC_Reroll</Pieces>
+		<Pieces>ASC_DeclineInfo</Pieces>
+		<Pieces>ASC_Decline</Pieces>
 	</Page>
 
 	<Page item="ASC_KnownPage">

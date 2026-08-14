@@ -217,6 +217,7 @@
 		<Include>EQUI_AAWindow.xml</Include>
 		<Include>EQUI_AoTSpellChoiceWnd.xml</Include>
 		<Include>EQUI_NativeAchievementWnd.xml</Include>
+		<Include>EQUI_AoTDifficultyWnd.xml</Include>
 	</Composite>
 
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
