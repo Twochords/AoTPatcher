@@ -219,6 +219,7 @@
 		<Include>EQUI_NativeAchievementWnd.xml</Include>
 		<Include>EQUI_AoTDifficultyWnd.xml</Include>
 		<Include>EQUI_AoTTravelWnd.xml</Include>
+		<Include>EQUI_AoTFellowshipWnd.xml</Include>
 	</Composite>
 
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
