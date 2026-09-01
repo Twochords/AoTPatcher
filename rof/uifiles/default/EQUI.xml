@@ -220,6 +220,9 @@
 		<Include>EQUI_AoTDifficultyWnd.xml</Include>
 		<Include>EQUI_AoTTravelWnd.xml</Include>
 		<Include>EQUI_AoTFellowshipWnd.xml</Include>
+		<Include>EQUI_AoTFctWnd.xml</Include>
+		<Include>EQUI_AoTFctAnchorWnd.xml</Include>
+		<Include>EQUI_AoTMeterWnd.xml</Include>
 	</Composite>
 
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
